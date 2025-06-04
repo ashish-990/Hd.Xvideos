@@ -1,0 +1,86 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a3b;
+    color: #fff;
+}
+header {
+    background-color: #0d0d1f;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img {
+    height: 50px;
+}
+nav {
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.banner-ad, .mid-ad, .footer-ad {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 14px;
+}
+.video-section {
+    padding: 20px;
+}
+.section-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.video-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.video-card {
+    background-color: #2b2b52;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.video-card img {
+    width: 100%;
+    display: block;
+}
+.video-card .info {
+    padding: 10px;
+}
+.video-card .info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+footer {
+    background-color: #0d0d1f;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 40px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
